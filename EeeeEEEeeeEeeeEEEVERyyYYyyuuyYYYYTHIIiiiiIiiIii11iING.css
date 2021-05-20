@@ -347,9 +347,11 @@ body{
   position: absolute;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .unit-text{
+  font-size: 24px;
   color: rgba(0, 0, 0, 0);
   transition: color 0.6s;
 }
@@ -359,6 +361,13 @@ body{
   margin: auto;
   transition: color 0.6s;
   font-size: 34px;
+}
+.galer-unit:hover .unit-text{
+  color: brown;
+}
+
+.galer-unit:hover .unit-text-header{
+  color: brown;
 }
 
 .unit1{
@@ -373,14 +382,57 @@ body{
   align-items: center;
 }
 
-.unit1:hover{
+.galer-unit:hover .unit1{
   filter: blur(8px);
 }
 
-.galer-unit:hover .unit-text{
-  color: brown;
+.unit2{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://polit.ru/media/photolib/2014/12/10/Око_Саурона_1418230497.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: filter 0.6s;
+  display: flex;
+  align-items: center;
+  z-index: 1;
 }
 
-.galer-unit:hover .unit-text-header{
-  color: brown;
+.galer-unit:hover .unit2{
+  filter: blur(8px);
+}
+
+.unit3{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://sdo.miigaik.ru/pluginfile.php/22409/course/overviewfiles/6.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: filter 0.6s;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.galer-unit:hover .unit3{
+  filter: blur(8px);
+}
+
+.unit4{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://avatars.mds.yandex.net/get-zen_doc/1591494/pub_5d0ce9fba346fd00affa65fd_5d0e27723f7c1100b029a915/scale_1200");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: filter 0.6s;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.galer-unit:hover .unit4{
+  filter: blur(8px);
 }
