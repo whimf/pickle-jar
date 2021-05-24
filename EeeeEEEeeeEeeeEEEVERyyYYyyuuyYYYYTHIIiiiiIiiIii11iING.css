@@ -206,6 +206,15 @@ body{
   border-color: #D7B8F3;
 }
 
+.auto-footer{
+  margin: 0px;
+  color: rgba(0, 0, 0, 0);
+}
+
+.sum-fon:hover .auto-header{
+  color: white
+}
+
 /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
 /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
 /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
@@ -330,8 +339,7 @@ body{
   justify-content: center;
   margin: 160px 0px 0px 0px;
   display: flex;
-  flex-direction: row
-  padding: 8px;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -435,4 +443,78 @@ body{
 
 .galer-unit:hover .unit4{
   filter: blur(8px);
+}
+
+.galery-footer{
+  width: 100%;
+  color: silver;
+  text-align: center;
+}
+
+.galery-footer-link{
+  text-decoration: none;
+  color: silver;
+  transition: color 0.6s, text-shadow 0.6s;
+}
+
+.galery-footer:hover .galery-footer-link{
+  color: grey;
+  text-shadow: 0px 0px 15px silver;
+}
+
+/* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */
+/* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */
+/* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */
+/* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */
+/* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */ /* NEWS */
+
+.news-main{
+  margin: 250px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: baseline;
+}
+
+.main-menu-list-art{
+  margin: 0px 0px 8px 0px;
+  padding: 0px;
+}
+
+.main-nav-link-art{
+  font-size: 20px;
+	color: green;
+  text-decoration: none;
+  padding: 10px 0px;
+  border-top: 4px solid rgba(0, 0, 0, 0);
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  transition: color 0.5s, border-top-color 0.5s, border-bottom-color 0.5s, padding 0.5s ease;
+}
+
+.main-header:hover .main-nav-link-art{
+  color: white;
+}
+
+.main-header:hover .main-nav-link-art:hover{
+  color: green;
+}
+
+.main-article-header-art{
+  width: auto;
+  text-align: left;
+  margin: 10px 0px 0px 0px;
+  font-size: 32px;
+  color: green;
+}
+
+.news-article{
+  width: 30%;
+  height: auto;
+  padding: 24px;
+}
+
+.news-article-main-text{
+  font-weight: normal;
 }
